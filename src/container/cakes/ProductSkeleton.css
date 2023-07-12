@@ -1,0 +1,35 @@
+.product_cards {
+    margin-bottom: 2rem;
+    width: calc(25% - 15px);
+  }
+  
+  .product_images {
+    background-color: rgb(226, 226, 226);
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6rem;
+    margin: 1rem;
+    height: 30rem;
+  }
+  
+  /* Tablet styles */
+  @media only screen and (max-width: 1024px) {
+    .product_cards {
+      width: calc(33.33% - 10px);
+    }
+  }
+  
+  /* Mobile styles */
+  @media only screen and (max-width: 768px) {
+    .product_cards {
+      width: calc(50% - 10px);
+    }
+    .product_images {
+        height: 24rem;
+      }
+  }
+  

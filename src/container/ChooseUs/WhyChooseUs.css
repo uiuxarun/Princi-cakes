@@ -1,0 +1,130 @@
+.choose_head {
+  text-align: center;
+  margin: 8rem 0;
+}
+
+.choose_parts {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 8rem;
+}
+
+.choosepart {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.chooseimg {
+  height: 36rem;
+  width: 30rem;
+  position: relative;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  border-radius: 1.6rem;
+}
+
+.chooseimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -4rem;
+}
+
+.chooseimg .overlay-p1{
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+}
+
+.choosepart:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay p {
+  color: white;
+  font-weight: 350;
+  line-height: 1.75rem;
+  letter-spacing: 0.2px;
+  font-size: 1.4rem;
+  padding: 2rem 2rem;
+  transition: transform 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.overlay-text {
+  position: absolute;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.choosepart:hover .overlay-text {
+  opacity: 1;
+}
+
+.tilt {
+  transition: transform 0.2s ease-out;
+}
+
+.choosepart .tilt:hover {
+  transform: rotateX(10deg) rotateY(10deg);
+  transition: transform 0.05s ease-in-out;
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 1024px) {
+  .choose_parts {
+    flex-wrap: wrap;
+    margin: 5rem 2rem;
+  }
+
+  .choosepart {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .overlay-text{
+    opacity: 1;
+  }
+  .choose_head {
+    margin: 6rem 0;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .choose_parts {
+    flex-wrap: wrap;
+    margin: 4rem 1rem 1rem 1rem;
+  }
+
+  .choosepart {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .chooseimg .overlay-p1{
+    font-size: 1.8rem;
+    font-weight: 900;
+    bottom: 1rem;
+  }
+  .overlay p{
+    margin-top: 4.84rem;
+    font-weight: 400;
+  }
+}

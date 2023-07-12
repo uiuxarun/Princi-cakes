@@ -1,0 +1,22 @@
+.products {
+  display: flex;
+  flex-flow: wrap;
+  margin: 5rem 4rem;
+  gap: 20px;
+}
+
+/* Tablet styles  */
+@media only screen and (max-width: 1024px) {
+  .products {
+    margin: 4rem 4rem;
+    gap: 10px;
+  }
+}
+
+/* Mobile styles  */
+@media only screen and (max-width: 768px) {
+  .products {
+    margin: 2rem 1rem;
+    gap: 0px;
+  }
+}

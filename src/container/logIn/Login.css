@@ -1,0 +1,50 @@
+.guest{
+  background: rgb(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 1.6rem;
+  padding: 1.6rem 0;
+  margin-top: 8rem;
+  cursor: pointer;
+  width: 30rem;
+}
+
+.guest span{
+  font-size: 1.6rem;
+  color: white;
+  position: relative;
+  display: inline-flex;
+  align-items: center; 
+}
+
+.guest span svg {
+  margin-left: 1.6rem; 
+}
+
+.guest span:hover {
+  color: var(--light-color);
+}
+
+.guest span::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--light-color);
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.guest span:hover::before {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .guest_sm{
+      display: none;
+    }
+}

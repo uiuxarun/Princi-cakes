@@ -1,0 +1,164 @@
+ .footer_head {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer_top-left,
+.footer_top-right {
+  width: 50%;
+}
+
+.footer_top-left {
+  margin: 2rem 0 2rem 4rem;
+}
+
+.footer_top-left p {
+  font-size: 1.6rem;
+  width: 70%;
+  padding-bottom: 2rem;
+  color: var(--grey-color);
+}
+
+.footer_top-left img {
+  padding-bottom: 2rem;
+}
+
+.footer_icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.footer_icons svg {
+  margin-right: 1.6rem;
+  color: var(--primary-color);
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0 1rem 0;
+  width: auto;
+  color: var(--primary-color);
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.footer_links span {
+  padding-right: 2rem;
+}
+
+.link1 {
+  padding-left: 4rem;
+}
+
+.link2 {
+  justify-content: center;
+}
+
+.link3 {
+  padding-right: 4rem;
+  flex-direction: row-reverse;
+}
+
+.forrm {
+  width: 70%;
+  background: transparent;
+  margin-right: 0;
+}
+
+form p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.btn_sub {
+  margin-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 1024px) {
+  .footer_icons {
+    justify-content: center;
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_links {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .footer_top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_top-left,
+  .footer_top-right {
+    width: 100%;
+    text-align: center;
+  }
+  .footer_top-left {
+    margin: 4rem 0 2rem 0;
+  }
+
+  .footer_top-left p {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .footer_icons svg {
+    margin: 0 2rem;
+  }
+
+  .forrm {
+    width: 100%;
+  }
+
+  form p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer_links span {
+    padding-right: 1.5rem;
+  }
+  .footer_bottom {
+    padding: 0 0 1rem 0;
+  }
+  .link1 {
+    padding-left: 0;
+  }
+  .link3 {
+    padding-right: 0;
+  }
+}

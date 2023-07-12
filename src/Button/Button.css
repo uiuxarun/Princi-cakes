@@ -1,0 +1,81 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 30px;
+  background: transparent;
+  font-size: 1.6rem;
+  padding: 0.8rem 5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn span {
+  z-index: 3;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+  z-index: 3;
+}
+
+.btn:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+/* Additional styles for the primary color variation */
+.btn.primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn.primary::before {
+  background: var(--primary-color);
+}
+
+.btn.primary:hover {
+  color: var(--light-color);
+}
+
+/* Additional styles for the light color variation */
+.btn.light {
+  border: 2px solid var(--light-color);
+  color: var(--light-color);
+}
+
+.btn.light::before {
+  background: var(--light-color);
+}
+
+.btn.light:hover {
+  color: var(--primary-color);
+}
+
+/* Additional styles for the dark color variation */
+.btn.dark {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  font-weight: 550;
+}
+
+.btn.dark::before {
+  background: var(--light-color);
+}
+
+.btn.dark:hover {
+  color: var(--primary-color);
+}

@@ -45,6 +45,10 @@ input[type='message'] {
 .contact_right {
   width: 28%;
 }
+.contact_left,
+.contact_right {
+  padding-top: 2rem;
+}
 
 .contact_middle {
   display: flex;
@@ -84,6 +88,7 @@ input[type='message'] {
   margin: 3rem 0;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .social_icons svg {
@@ -105,6 +110,53 @@ iframe {
 }
 
 /* Tablet styles */
+@media only screen and (min-width: 1440px) {
+  .contact_head {
+    align-items: center;
+  }
+  .contact_head h2 {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+  }
+  
+  input[type='name'],
+  input[type='mail'],
+  input[type='message'] {
+    padding: 1.6rem;
+    margin: 1rem 0;
+  }
+  
+  input[type='message'] {
+    height: 24rem;
+  }
+  
+  .text_area_normal,
+  .text_area {
+    height: 20rem;
+    margin: 1rem 0;
+  }
+  
+  .contact_right p {
+    font-size: 1.8rem;
+    line-height: 160%;
+  }
+  
+  .shop_detail h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .social_icons svg {
+    margin: 1.6rem 2rem;
+  }
+  .shop_detail {
+    margin: 1.6rem 0;
+  }
+  
+  .map {
+    margin: 6rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .contact_head {
     flex-direction: column;

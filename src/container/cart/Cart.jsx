@@ -46,7 +46,7 @@ const Cart = ({setShowCart}) => {
                 <ShoppingCartOutlinedIcon />
                 <span>No products in the cart</span>
                 <Link to={"/#cakes"}>
-                <Button text="Return to shop" className="dark" />
+                <Button text="Return to shop" className="dark cart-btn" />
                 </Link>
             </div>}
             {!!cartItems?.length &&<>
@@ -56,7 +56,7 @@ const Cart = ({setShowCart}) => {
                         <span className="text">Subtotal</span>
                         <div className="text total">&#8377;{cartSubTotal}</div>
                     </div>
-                    <Button text="Checkout" className="dark" onClick={handlePayment} />
+                    <Button text="Checkout" className="dark cart-btn" onClick={handlePayment} />
                 </div>
             </>}
         </div>

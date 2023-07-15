@@ -5,8 +5,9 @@
 
 .choose_parts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5rem 8rem;
+  margin: 5rem calc((100% - 96rem) / 4);
 }
 
 .choosepart {
@@ -15,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 4rem;
 }
 
 .chooseimg {
@@ -40,7 +42,7 @@
   top: -4rem;
 }
 
-.chooseimg .overlay-p1{
+.chooseimg .overlay-p1 {
   font-size: 1.6rem;
   position: absolute;
   bottom: 1rem;
@@ -88,19 +90,26 @@
 }
 
 /* Tablet styles */
+@media only screen and (min-width: 1920px) {
+  .chooseimg {
+    height: 44rem;
+    width: 34rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .choose_parts {
-    flex-wrap: wrap;
-    margin: 5rem 2rem;
+    margin: 5rem calc((100% - 64rem) / 3);
   }
 
   .choosepart {
-    width: 100%;
+    width: calc((100% - 24rem) / 2);
     margin-bottom: 4rem;
   }
-  .overlay-text{
+
+  .overlay-text {
     opacity: 1;
   }
+
   .choose_head {
     margin: 6rem 0;
   }
@@ -109,21 +118,21 @@
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
   .choose_parts {
-    flex-wrap: wrap;
     margin: 4rem 1rem 1rem 1rem;
   }
 
   .choosepart {
-    width: 100%;
+    width: calc(100% - 2rem);
     margin-bottom: 4rem;
   }
 
-  .chooseimg .overlay-p1{
+  .chooseimg .overlay-p1 {
     font-size: 1.8rem;
     font-weight: 900;
     bottom: 1rem;
   }
-  .overlay p{
+
+  .overlay p {
     margin-top: 4.84rem;
     font-weight: 400;
   }

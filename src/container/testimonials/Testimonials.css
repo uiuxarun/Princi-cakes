@@ -37,6 +37,7 @@
 .testimonial_content p {
   font-size: 16px;
   text-align: left;
+  color: #535353;
 }
 
 .profile {
@@ -67,12 +68,13 @@
 .profile_description h6 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000;
+  color: #535353;
 }
 
 .testimonial_head1 {
   display: flex;
   justify-content: center;
+  padding: 1rem 0 4rem 0;
 }
 
 .carousel_arrow {
@@ -93,6 +95,10 @@
 
 .carousel_arrow_prev {
   left: -1rem;
+}
+
+.control-arrow{
+  background: transparent !important;
 }
 
 .carousel_arrow_next {
@@ -116,6 +122,34 @@
 }
 
 /* Tablet styles  */
+@media only screen and (min-width: 1440px) {
+  .review_part1 h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .review_part1 p {
+    font-size: 1.8rem;
+  }
+  
+  .review_part2 {
+    margin-left: 8rem;
+    max-width: 70rem;
+  }
+  
+  .testimonial_content {
+    padding: 3rem;
+  }
+  
+  .testimonial_content p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .testimonial_head1 {
+    padding: 1rem 0 5rem 0;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
 .testimonial_head1{
   flex-direction: column;

@@ -1,11 +1,11 @@
 .product_card {
     margin-bottom: 2rem;
     width: calc(25% - 15px);
+    cursor: pointer;
   }
   
   .product_image {
     background-color: black;
-    cursor: pointer;
     overflow: hidden;
     flex: 1;
     display: flex;
@@ -45,6 +45,11 @@
   }
   
   /* Tablet styles  */
+  @media only screen and (min-width: 1440px) {
+    .product_image {
+      height: 36rem;
+    }
+  }
   @media only screen and (max-width: 1024px) {
     .product_card {
       width: calc(33.33% - 10px);

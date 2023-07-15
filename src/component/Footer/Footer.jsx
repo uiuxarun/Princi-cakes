@@ -6,6 +6,8 @@ import Button from "../../Button/Button";
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { FaFacebook } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -21,6 +23,21 @@ const Footer = () => {
 
   const handleEmailBlur = () => {
     setEmailFocused(false);
+  };
+
+  const handleButtonClick = () => {
+    if (email.trim() === '') {
+      toast.error('Please fill all the fields', {
+        autoClose: 2000,
+        position: toast.POSITION.BOTTOM_CENTER,
+      });
+    } else {
+      setEmail('');
+      toast.success('Thank you for connecting us!', {
+        autoClose: 2000,
+        position: toast.POSITION.BOTTOM_CENTER,
+      });
+    }
   };
 
   const shareOnInstagram = () => {
@@ -56,17 +73,17 @@ const Footer = () => {
         </div>
         <div className="footer_top-right">
           <form className="forrm">
-          <p>Let's join us!</p>
+          <p>Subscribe Us!</p>
             <FormInput
               type="email"
               value={email}
               onChange={handleEmailChange}
               onFocus={handleEmailFocus}
               onBlur={handleEmailBlur}
-              placeholder="Enter email"
+              placeholder="Enter your email"
               isFocused={isEmailFocused}
             />
-            <Button type='submit' text='Subscribe' link='/' className='dark btn_sub' />
+            <Button type='submit' text='Submit'  onClick={handleButtonClick} className='dark btn_sub' />
           </form>
         </div>
       </div>
@@ -83,6 +100,7 @@ const Footer = () => {
           <p>Design & created by Arun</p>
         </div>
       </div>
+      <ToastContainer style={{ fontSize: '1.6rem' }} />
     </div>
   );
 };

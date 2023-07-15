@@ -71,7 +71,7 @@ const Contact = () => {
       setName('');
       setEmail('');
       setMessage('');
-      toast.success('Thank You for Subscription', {
+      toast.success('Thank you for connecting', {
         autoClose: 2000,
         position: toast.POSITION.BOTTOM_CENTER,
       });
@@ -98,7 +98,7 @@ const Contact = () => {
       <Subheading Subheading1='Get in Touch' subheading2='Contact Us' />
       <div className='contact_head'>
         <div className='contact_left'>
-          <h2>Let's join us!</h2>
+          <h2>Any special request?</h2>
           <form className='contact_form'>
             <FormInput
               type='name'
@@ -134,7 +134,7 @@ const Contact = () => {
             />
             <Button
               type='button'
-              text='Subscribe'
+              text='Submit'
               link='/'
               className='dark btn_sub'
               onClick={handleButtonClick}

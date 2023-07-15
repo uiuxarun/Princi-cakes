@@ -197,7 +197,7 @@
 /*XL Desktop styles */
 @media only screen and (min-width: 1441px) {
     .app_navbar {
-      padding: 4rem 6rem 4rem 6rem;
+      padding: 2rem 6rem 2rem 6rem;
     }
     .app_navbar-logo img {
       width: 16rem;

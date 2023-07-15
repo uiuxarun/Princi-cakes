@@ -107,3 +107,12 @@
     text-transform: uppercase;
     color: var(--primary-color)
   }
+
+  .cart_btn{
+    color: var(--light-color);
+    background-color: var(--primary-color);
+  }
+  .cart_btn:hover{
+    color: var(--light-color);
+    background-color: var(--primary-color);
+  }

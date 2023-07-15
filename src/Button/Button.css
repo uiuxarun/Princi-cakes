@@ -79,3 +79,18 @@
 .btn.dark:hover {
   color: var(--primary-color);
 }
+
+/* Additional styles for the cart color variation */
+.btn.cart-btn {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  font-weight: 550;
+}
+
+.btn.cart-btn::before {
+  background: var(--primary-color);
+}
+
+.btn.cart-btn:hover {
+  color: var(--light-color);
+}

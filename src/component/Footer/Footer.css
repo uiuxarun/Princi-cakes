@@ -40,6 +40,7 @@
 .footer_icons svg {
   margin-right: 1.6rem;
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 .footer_bottom {
@@ -97,6 +98,43 @@ form p {
 }
 
 /* Tablet styles */
+@media only screen and (min-width: 1440px) {
+  .footer_top-left {
+    margin: 6rem 0 2rem 6rem;
+  }
+  
+  .footer_top-left p {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+
+  .footer_bottom {
+    padding: 1.6rem 0 1.6rem 0;
+  }
+  
+  .footer_links {
+    font-size: 1.4rem;
+  }
+  
+  .footer_links span {
+    padding-right: 2rem;
+  }
+  
+  .link1 {
+    padding-left: 6rem;
+  }
+  .link3{
+    padding-right: 6rem;
+  }
+  
+  .forrm {
+    margin-right: 1rem;
+  }
+  
+  form p {
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .footer_icons {
     justify-content: center;

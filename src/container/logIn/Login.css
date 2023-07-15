@@ -43,6 +43,11 @@
   width: 100%;
 }
 
+@media only screen and (min-width: 1441px) {
+  .guest_sm{
+      display: none;
+    }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .guest_sm{
       display: none;
